@@ -1,6 +1,3 @@
-import java.util.ArrayList;
-import java.util.List;
-
 public class Brasil extends UmPais {
 
 
@@ -28,20 +25,20 @@ public class Brasil extends UmPais {
         return 0;
     }
 
-    List vizinho  = new ArrayList<>();
+        String[] listaVizinho = new String[3];
 
-    public void fronteira() {
-        this.vizinho.add("Argentina");
-        this.vizinho.add("Urugai");
-        this.vizinho.add("Paraguai");
+    public void setListaVizinho(String[] listaVizinho) {
+        this.listaVizinho = listaVizinho;
     }
 
-    public void paises(){}
-
-    public void setPaises(List<String> vizinho) {
-        this.vizinho = vizinho;
+    public String[] getListaVizinho() {
+        return listaVizinho;
     }
-
-
+    public void vizinho(){
+        this.listaVizinho[0] = "Argentina";
+        this.listaVizinho[1] = "Paraguai";
+        this.listaVizinho[2] = "Urugai";
+        System.out.println("Os Vizinhos de Brasil São: " + listaVizinho[1] + ", " + listaVizinho[2] + ", " + listaVizinho[0]);
+    }
 }
 
