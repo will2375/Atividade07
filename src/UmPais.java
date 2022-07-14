@@ -8,10 +8,6 @@ public class UmPais {
     private float dimencaokm2;
 
 
-    public UmPais() {
-        this.paises = paises;
-    }
-
     public UmPais(String iso31661, String nome, double populacao, float dimencaokm2) {
         this.iso31661 = iso31661;
         this.nome = nome;
@@ -19,11 +15,10 @@ public class UmPais {
         this.dimencaokm2 = dimencaokm2;
     }
 
-    List<String> paises = new ArrayList<>();
+    public UmPais() {
 
-    public  void fronteira(String paises){
-        this.paises.add(paises);
     }
+
 
     public String getIso31661() {
         return iso31661;

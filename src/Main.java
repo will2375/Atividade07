@@ -5,5 +5,6 @@ public class Main {
         brasil.status();
         System.out.println(brasil.getNome());
         brasil.densidadePopulacional();
+        System.out.println(brasil.vizinho);
     }
 }

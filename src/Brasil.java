@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class Brasil extends UmPais {
 
 
@@ -17,13 +20,28 @@ public class Brasil extends UmPais {
     }
 
 
-
     @Override
     public double densidadePopulacional() {
         setPopulacao(500);
         setDimencaokm2(200);
-        System.out.println("esse Pais possui " + getPopulacao()/ getDimencaokm2() + " Pessoa por km" );
+        System.out.println("esse Pais possui " + getPopulacao() / getDimencaokm2() + " Pessoa por km");
         return 0;
     }
+
+    List vizinho  = new ArrayList<>();
+
+    public void fronteira() {
+        this.vizinho.add("Argentina");
+        this.vizinho.add("Urugai");
+        this.vizinho.add("Paraguai");
+    }
+
+    public void paises(){}
+
+    public void setPaises(List<String> vizinho) {
+        this.vizinho = vizinho;
+    }
+
+
 }
 
