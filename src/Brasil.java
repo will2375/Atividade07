@@ -19,8 +19,8 @@ public class Brasil extends UmPais {
 
     @Override
     public double densidadePopulacional() {
-        setPopulacao(500);
-        setDimencaokm2(200);
+        setPopulacao(212.6);
+        setDimencaokm2(8516000);
         System.out.println("esse Pais possui " + getPopulacao() / getDimencaokm2() + " Pessoa por km");
         return 0;
     }
